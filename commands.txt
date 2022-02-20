@@ -1,0 +1,15 @@
+  const Donations = await hre.ethers.getContractFactory("Donations");
+  const donations = await Donations.deploy();
+  donations.address
+
+const Storage = await ethers.getContractFactory("Storage");
+storage = await Storage.deploy();
+await storage.deployed();
+
+const Donations = await ethers.getContractFactory("Donations");
+donations = await Donations.deploy(storage.address);
+await donations.deployed();
+
+await storage.setDonationsAdr(donations.address);
+
+  await donations.AddBenefited("0xA24aAb5971C75e357803d15Ea60e2131dE688A5a", ethers.utils.parseEther("0.0005"));

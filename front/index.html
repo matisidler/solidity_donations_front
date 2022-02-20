@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="js/script.js"></script>
+    <title>Donations Page</title>
+</head>
+<body>
+    <header>
+        <div class="header_title">
+            <h1 class="title">Welcome to donation page</h1>
+            <h3 class="subtitle">Here you can donate to different projects using ETH and receiveing tokens by donating!</h3>
+            <hr>
+            <h5 class="subtitle">Connect to metamask by clicking on this button:</h5>
+            <button class="get_started" id="started">GET STARTED</button>
+        </div>
+    </header>
+    <div class="content">
+        <div class="receive_info">
+            <div class="form" id="form">
+                <h1 class="form_txt">Add your own project</h1>
+                <p class="form_txt">Your address:</p>
+                <p class="form_txt" id="currentAdr">0x00000000000000000</p>
+                    <input class="input addProject" type="text" placeholder="DESCRIPTION OF YOUR PROJECT" name="" id="">
+
+                        <input class="input addProject" type="text" placeholder="TARGET TO REACH (IN ETH FORMAT)" name="" id=""> 
+
+                    <button class="donate submit">SUBMIT</button>
+                    </div>
+                
+            </div>
+        </div>
+        <h1 class="titles">Projects</h1>
+        <div id="list_projects" class="list_projects">
+        </div>
+    </div>
+</body>
+</html>
