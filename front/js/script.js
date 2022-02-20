@@ -47,11 +47,12 @@ const benefitedsAdr = await donations.GetAllBenefited()
         return
     } 
     let benefitedStruct = await donations.GetBenefitedByAdr(value)
+    console.log("data to change: ",benefitedStruct)
     let data = {
         adr: value,
-        desc: benefitedStruct.description,
-        collected: ethers.utils.formatEther(benefitedStruct.collected),
-        target: ethers.utils.formatEther(benefitedStruct.target),
+        desc: benefitedStruct[3],
+        collected: ethers.utils.formatEther(benefitedStruct[1]),
+        target: ethers.utils.formatEther(benefitedStruct[2]),
         input_id: value
     }
     const newProject = addProject(data)
