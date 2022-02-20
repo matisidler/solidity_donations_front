@@ -12,9 +12,9 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   }
 }); 
 
-const ALCHEMY_API_KEY = "https://eth-rinkeby.alchemyapi.io/v2/foUOO4lS7AxslVPdTE_-5rnUZt7gIiDK";
+const ALCHEMY_API_KEY = "PUT YOUR OWN ALCHEMY API KEY";
 
-const RINKEBY_PRIVATE_KEY = "565679a38479ba1358bbf5cf1081dcb117e43608ef1e852243792a0b8470e09b";
+const RINKEBY_PRIVATE_KEY = "PUT YOUR OWN RINKEBY PRIVATE KEY";
 
 // You need to export an object to set up your config
 // Go to https://hardhat.org/config/ to learn more
