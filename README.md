@@ -1,5 +1,7 @@
 # Donations Project
 
+[Click here to access to the deployed website of the repo](https://soliditydonations.000webhostapp.com/) 
+
 This is a decentralized site where users can donate to different projects with their respective amount targets, or upload their own project to receive donations.
 
 Every project has an address, description, target, and amount collected. If the project reached its amount target, it will just be deleted. 
