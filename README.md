@@ -17,16 +17,4 @@ Frontend will be improved. Btw, I didn't put a lot of effort into frontend, I pr
 
 If you want to modify a function and upload the new SC, you won't lose the currently stored data. Just send the address as a parameter when deploying the SC, go to Storage.sol and execute the setDonationsAdr function (only available by the owner of the Storage SC). 
 
-
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+- Made with Solidity and Javascript. Using hardhat and etherjs. Front deployed to 000webhost. Contracts deployed to Rinkeby testing network. 
